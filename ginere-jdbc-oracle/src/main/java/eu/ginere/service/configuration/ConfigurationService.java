@@ -7,7 +7,7 @@ import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 
 import eu.ginere.jdbc.oracle.DaoManagerException;
-import eu.ginere.jdbc.oracle.config.dao.ConfigurationDAOInterface;
+import eu.ginere.jdbc.oracle.configuration.dao.ConfigurationDAOInterface;
 import eu.ginere.util.test.TestInterface;
 import eu.ginere.util.test.TestResult;
 
@@ -66,7 +66,7 @@ public class ConfigurationService implements TestInterface {
 	 * Realiza el testeo de la clase.
 	 * @return String con el resultado de la prueba.
 	 */
-	public static TestResult test() {
+	public TestResult test() {
 		TestResult ret=new TestResult(ConfigurationService.class);
 		
 		if (DAO==null){

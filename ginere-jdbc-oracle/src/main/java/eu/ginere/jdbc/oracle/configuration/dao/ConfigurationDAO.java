@@ -1,4 +1,4 @@
-package eu.ginere.jdbc.oracle.config.dao;
+package eu.ginere.jdbc.oracle.configuration.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

@@ -1,4 +1,4 @@
-package eu.ginere.jdbc.oracle.config.dao;
+package eu.ginere.jdbc.oracle.configuration.dao;
 
 import eu.ginere.jdbc.oracle.DaoManagerException;
 import eu.ginere.util.test.TestInterface;
