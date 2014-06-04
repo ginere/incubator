@@ -35,16 +35,16 @@ public class DataBase implements TestInterface{
 	
 	public DataBase(String jndiName) throws NamingException{
 		this.name=jndiName;
-		log.info("Obteniendo la datasource del recurso jndi:"+jndiName+"'");
+		log.info("Getting the datasource from the jndi ressource:"+jndiName+"'");
 		InitialContext initContext = new InitialContext();
 		this.dataSource = (DataSource) initContext.lookup("java:comp/env/"+jndiName);		
-		log.info("Se ha actualizado satisfactoriamente la DataSource del recurso jndi:"+jndiName+"'");		
+		log.info("Database sucesfully initialized from jndi ressource jndi:"+jndiName+"'");		
 	}
 	
 	public DataBase(String name,DataSource datasource) throws NamingException{
 		this.name=name;
 		this.dataSource = datasource;
-		log.info("Se ha actualizado satisfactoriamente la DataSource i:"+name+"'");		
+		log.info("Sacesfully actualized datasource:"+name+"'");		
 	}
 	
 	public String getName() {
